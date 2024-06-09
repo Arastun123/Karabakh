@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+:root{
+    --main: #151e21;
+    --mobile-menu: #f2f2f2;
+    --add-info: #d1c68c;
+    --add-info-headline: #e7e7e8;
+    --active-tab: #918668;
+    --edit: #303a40;
+    --dot: #c4c4c4;
+    --file-upload: #c4c4c41a;
+    --submit-btn: #908668;
+    --checkbox: #d4d4d4;
+    --image-upload: #dfdcd3;
+    --tooltip-hover: #f3f2eb;
+    --input-delete: #e1171714;
+    --page-link: #eee;
+    --input: #ffffff80;
+    --input-form: #22222280;
+    --add-info-tab: #151e214d;
+    --add-info-p: #686868;
+}
+#heros-cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 80%;
+    height: 100vh;
+    background:center/cover no-repeat;
+    display:flex;
+    align-items:end;
+    margin:10px 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.shadow{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    margin:0;
+    background: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 92.11%),linear-gradient(0deg,#C4C4C4,transparent);
+}
+h6{
+    font-size:1em;
+    color: #fff;
+    width: max-content;
+}
+#detail{
+    font-family: roboto slab,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    display: none;
+}
+.btn{ background:none; border: none; color: #fff;}
+#detail .d-flex{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:10px;
+}
+#hero-img{
+    width: 80%; 
+    border: 1px dashed #d4d6dc33; 
+    padding:15px;
+    margin:10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+#hero-img img{width: 100%;}
+#hero-detail{ width: 80%; height: auto; }
+h2{ font-size:32px; color: #fff; margin:10px 0;}
+#text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    height: 40vh;
+    margin:20px 0;
+    padding:20px 0;
+}
+#text span{ font-size:16px; }
+#text p{margin: 10px; }
+#text p::first-letter{ text-transform: capitalize;}
+.back{cursor: pointer;}
+@media only screen and (min-width:992px) {
+    .card{ width: 30%; padding: 0; height: 50vh; margin:10px; }
+    h6{ font-size:16px; }
+    #hero-img{ width: 40%; }
+}
