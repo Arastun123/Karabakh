@@ -6,21 +6,21 @@ $(".hamburger-menu").click(function () {
   $("a>svg").toggleClass("active");
   $("#add-info").toggleClass("active");
   $("article").toggleClass("none");
+  $("body").toggleClass("overflow");
 });
 
 $(".dropdown").click(function () {
   $(".dropdown-menu").fadeToggle();
 });
 
-
-$(window).scroll(function(){ 
+$(window).scroll(function () {
   let offset = $(window).scrollTop() + $(window).height(),
-  animatables = $('.animatable');
-  animatables.each(function() {
+    animatables = $(".animatable");
+  animatables.each(function () {
     let animatable = $(this);
-    if ((animatable.offset().top + animatable.height() - 20) < offset) {
-      $("body").css({overflowX: 'hidden'});
-      animatable.removeClass('animatable').addClass('animated');
+    if (animatable.offset().top + animatable.height() - 20 < offset) {
+      $("body").css({ overflowX: "hidden" });
+      animatable.removeClass("animatable").addClass("animated");
     }
   });
-})
+});
